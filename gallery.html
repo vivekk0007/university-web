@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIET CHANDIARH</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset*/
+    body{
+     
+        background-color: whitesmoke;
+        
+       
+    }
+    .main-body{
+        margin: 3Opx;
+        padding: 10px;
+    }
+    .left{
+       display: inline-block;
+       position: absolute;
+       left: 65px;
+       top: 20px;
+    }
+
+    .mid{ 
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .right{ 
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 16px;
+    }
+    .navbar li a{
+        color: brown;
+        text-decoration: none;
+        padding: 25px 15px;
+    }
+    .navbar li a:hover{
+        text-decoration:underline;
+        color: black;
+    }
+    .left img{
+        width: 100px;
+    }
+    .btn{
+        margin: 0px 10px;
+        color:grey;
+        padding: 6px 12px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        background-color:white;
+        text-decoration:double;
+    }
+    .btn:hover{
+        text-decoration: underline;
+        color: black;
+    }
+    .container{
+        border: green;
+        margin: 56px 80px;
+        width: 33%;
+        padding: 35px 75px;
+        border-radius: 20px;
+        color: aliceblue;
+
+    }
+    .cform input{
+        text-align: center;
+        display: block;
+        width: 300px;
+        border: 2px solid black;
+        margin: 10px auto;
+        padding: 6px;
+        font-size: 10px;
+        font-family:serif;
+
+    }
+    .container h1 {
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
+    .cform textarea{
+        width:300px;
+        height:150px;
+        margin: 10px auto;
+        padding: 6px;
+        font-family:serif;
+        display: block;
+        
+    }
+
+    </style>
+<body>
+    <div class="main-body">
+    <header class="header">
+        <div class="left">
+            <img src="img/UIET_logo.png" alt="error">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="placement.html">Placements</a></li>
+      <!--       <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Staff</a></li>-->   
+            </ul>
+            <div id="map"></div>
+
+            <script>
+              function initMap() {
+                const universityLocation = { lat: 37.7749, lng: -122.4194 };
+                const map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 15,
+                  center: universityLocation
+                });
+                const marker = new google.maps.Marker({
+                  position: universityLocation,
+                  map: map,
+                  title: 'UIET PUNJAB UNIVERSITY'
+                });
+              }
+            </script>
+            <script src="https://goo.gl/maps/3MfZPtFTkfJMNnP99" async defer></script>
+        </div>
+    </header>
+    <div class="imagegallery" id="slideshow">
+        <img src="img/campus.jpg.avif" alt="Campus"width="500" height="600">
+        <img src="img/activities.jpg" alt="activities"width="500" height="600">
+        <img src="img/convocation.jpeg" alt="convocation"width="500" height="600">
+        <img src="img/director of uiet.jpeg" alt="Director"width="500" height="600">
+        <img src="img/staff.jpeg" alt=" Teachers"width="500" height="600">
+        <img src="img/placement.jpeg" alt="placement"width="500" height="600">
+    </div>
+    
+    <!--about-->
+    <div style="padding:8px 65px;margin-left:30px">
+        <h1 style="color: rgb(94, 48, 133);">ABOUT UIET</h1>
+       <p style="text-align: justify;padding-right:160px;padding-left: 60px;margin-left:40px;font-size: 1.5rem;"> University Institute of Engineering and Technology (UIET), an in-campus Engineering Institute situated in the heart of Panjab University, Chandigarh. Since its establishment, UIET has come a long way and is geared towards a rapid growth. This is possible because of highly competitive students which are selected through an all India entrance test, research oriented faculty and an infrastructure that is most suited towards learning. Apart from focusing on academics, the institute also lays emphasis on soft skills of students to prepare them for the professional world.
+
+       <br><br> Networking with leading organizations and institutes has benefitted the institute hugely in orienting students to R&D activities as per the requirements of industry. Corporate sector has been very forthcoming in assessing UIET students. As a result majority of our students are placed through campus placements.</p>
+    </div>
+    <!--location-->
+    <!--about-->
+    <div style="padding:8px 65px;margin-left:30px">
+        <h1 style="color: rgb(94, 48, 133);text-align:end;margin-right:95px">HOW TO REACH UIET</h1>
+       <p style="text-align: justify;padding-right: 169px;padding-left: 80px;margin-left: px;font-size: 1.5rem;"> SITUATED IN CHANDIGARH IT IS very much accessible throuigh various means of transport
+        <br>From Airport -- 22.5 km away
+        <br>From Railway junction -- 10km away<br>
+        it is situated at an ideal location and resides in the south campus of Punjab University.
+       </p>
+    </div>
+    
+</div>
+    <!--contact us-->
+    <div style="background-color:rgb(94 48 133 / 85%);margin-top: 70px;">
+      <p style="margin-left: 65px;padding: 26px;font-size: 4rem;color: wheat;">CONTACT US </p>
+ 
+      <p style="margin-left: 60%;padding: 26px;">
+        
+            <button class= "btn">Email us</button>
+            <button class="btn">More info </button>
+           
+      </p>
+    </div>
+</body>
+
+</html>
+
+  

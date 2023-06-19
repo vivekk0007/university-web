@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIET CHANDIARH</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset*/
+    body{
+     
+        background-color: whitesmoke;
+        
+       
+    }
+    .main-body{
+        margin: 3Opx;
+        padding: 10px;
+    }
+    .left{
+       display: inline-block;
+       position: absolute;
+       left: 65px;
+       top: 20px;
+    }
+
+    .mid{ 
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .right{ 
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 16px;
+    }
+    .navbar li a{
+        color: brown;
+        text-decoration: none;
+        padding: 25px 15px;
+    }
+    .navbar li a:hover{
+        text-decoration:underline;
+        color: black;
+    }
+    .left img{
+        width: 100px;
+    }
+    .btn{
+        margin: 0px 10px;
+        color:grey;
+        padding: 6px 12px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        background-color:white;
+        text-decoration:double;
+    }
+    .btn:hover{
+        text-decoration: underline;
+        color: black;
+    }
+    .container{
+        border: green;
+        margin: 56px 80px;
+        width: 33%;
+        padding: 35px 75px;
+        border-radius: 20px;
+        color: aliceblue;
+
+    }
+    .cform input{
+        text-align: center;
+        display: block;
+        width: 300px;
+        border: 2px solid black;
+        margin: 10px auto;
+        padding: 6px;
+        font-size: 10px;
+        font-family:serif;
+
+    }
+    .container h1 {
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
+    .cform textarea{
+        width:300px;
+        height:150px;
+        margin: 10px auto;
+        padding: 6px;
+        font-family:serif;
+        display: block;
+        
+    }
+
+    </style>
+<body>
+    
+    <div class="main-body">
+    <header class="header">
+        <div class="left">
+            <img src="img/UIET_logo.png" alt="error">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="placement.html">Placements</a></li>
+                <li><a href="new2.html">suggestions</a></li>
+      <!--       <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Staff</a></li>-->   
+            </ul>
+
+        </div>
+    </header>
+    <br>
+    <button id="click" onclick="clicking()">click if you liked the website</button>
+    <p id="display"></p>
+    <table>
+        <tr>
+            <td> <!--form start-->
+               
+                <div class="container">
+                    <h1 style="color: rgb(94, 48, 133);"> Query Form</h1>
+                    <form action="noaction.php">
+                        <div class="cform">
+                            <input type="text" name="" placeholder="First Name">
+                        </div>
+                        <div class="cform">
+                            <input type="text" name="" placeholder="Last Name">
+        
+                        </div>
+                        <div class="cform">
+                            <input type="text" email="" placeholder="Email">
+        
+                        </div>
+                        <div class="cform">
+                            
+                            <textarea id="subject" name="subject" placeholder="Write your Query" > write your Query
+                                
+                            </textarea>
+                        </div>
+                        <div class="cform">
+                            <button class="btn" style="background-color: #75dc50d9;color:black">Submit</button>
+                        </div>
+                        
+                        </form>
+                   
+        
+                </div>
+              <!--form end--></td>
+            <td>
+                <img src="img/19182_l-1.jpg.avif" style="height: 500px;">
+            </td>  
+        </tr>
+   
+    </table>
+    <!--about-->
+    <div style="padding:8px 65px;margin-left:30px">
+        <h1 style="color: rgb(94, 48, 133);">ABOUT UIET</h1>
+       <p style="text-align: justify;padding-right:160px;padding-left: 60px;margin-left:40px;font-size: 1.5rem;"> University Institute of Engineering and Technology (UIET), an in-campus Engineering Institute situated in the heart of Panjab University, Chandigarh. Since its establishment, UIET has come a long way and is geared towards a rapid growth. This is possible because of highly competitive students which are selected through an all India entrance test, research oriented faculty and an infrastructure that is most suited towards learning. Apart from focusing on academics, the institute also lays emphasis on soft skills of students to prepare them for the professional world.
+
+       <br><br> Networking with leading organizations and institutes has benefitted the institute hugely in orienting students to R&D activities as per the requirements of industry. Corporate sector has been very forthcoming in assessing UIET students. As a result majority of our students are placed through campus placements.</p>
+    </div>
+    <!--location-->
+    <!--about-->
+    <div style="padding:8px 65px;margin-left:30px">
+        <h1 style="color: rgb(94, 48, 133);text-align:end;margin-right:95px">HOW TO REACH UIET</h1>
+       <p style="text-align: justify;padding-right: 169px;padding-left: 80px;margin-left: px;font-size: 1.5rem;"> SITUATED IN CHANDIGARH IT IS very much accessible throuigh various means of transport
+        <br>From Airport -- 22.5 km away
+        <br>From Railway junction -- 10km away<br>
+        it is situated at an ideal location and resides in the south campus of Punjab University.
+       </p>
+    </div>
+</div>
+    <!--contact us-->
+    <div style="background-color:rgb(94 48 133 / 85%);margin-top: 70px;">
+      <p style="margin-left: 65px;padding: 26px;font-size: 4rem;color: wheat;">CONTACT US </p>
+ 
+      <p style="margin-left: 60%;padding: 26px;">
+        
+            <button class= "btn">Email us</button>
+            <button class="btn">More info </button>
+
+
+      </p>
+    </div>
+    <div class=".btn">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        let now = new Date();
+        console.log(now);
+
+        let dt = new Date(1000);
+        console.log(dt);
+
+        // let newDate = new Date("2029-09-30");
+        // console.log(newDate)
+
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("The year is ", yr);
+
+        let dat = newDate.getDate();
+        console.log("The date is ", dat);
+
+        let month = newDate.getMonth();
+        console.log("The month is ", month);
+
+        let hours = newDate.getHours();
+        console.log("The hours is ", hours);
+
+        newDate.setDate(8);
+        newDate.setMinutes(29);
+        console.log(newDate)
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+
+        
+    </script>
+</body>
+<script>
+    const newt=document.getElementById('display');
+    const clicking=()=>{
+        newt.innerText= "Thanks for liking the website !!!";
+       
+    } 
+    alert("Welcome to UIET Web portal")
+    </script>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Suggestion for Devlopment  </title>
+</head>
+
+<body>
+    <h1>Entry Form</h1>
+
+    <form id="entryForm">
+        <label for="name"><b>Name:</b></label>
+        <input type="text" id="name" required placeholder="Vivek"><br><br>
+
+        <label for="address"><b>University/collage:</b></label>
+        <input type="text" id="address" required placeholder="iit delhi"><br><br>
+
+        <label for="message"><b>Message:</b></label> <br>
+        <textarea id="message" rows="2" cols="10" placeholder="your suggestions"></textarea><br><br>
+
+        <button type="submit"><b>Submit</b></button>
+        <button type="button" onclick="clearForm()"><b>Clear</b></button>
+    </form>
+
+    <h2>suggetions so far:</h2>
+    <ul id="entryList"></ul>
+
+    <script>
+        document.getElementById('entryForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var address = document.getElementById('address').value;
+            var message = document.getElementById('message').value;
+
+            var entry = {
+                name: name,
+                address: address,
+                message: message
+            };
+
+            var entries = localStorage.getItem('entries');
+            if (!entries) {
+                entries = [];
+            } else {
+                entries = JSON.parse(entries);
+            }
+
+            entries.push(entry);
+            localStorage.setItem('entries', JSON.stringify(entries));
+
+            document.getElementById('name').value = '';
+            document.getElementById('address').value = '';
+            document.getElementById('message').value = '';
+
+            refreshEntryList();
+        });
+
+        function refreshEntryList() {
+            var entryList = document.getElementById('entryList');
+            entryList.innerHTML = '';
+
+            var entries = localStorage.getItem('entries');
+            if (entries) {
+                entries = JSON.parse(entries);
+                entries.forEach(function (entry) {
+                    var li = document.createElement('li');
+                    li.textContent =  'Name: ' + entry.name + ', Address: ' + entry.address + ', Message: ' + entry.message;
+                    entryList.appendChild(li);
+                });
+            }
+        }
+
+        function clearForm() {
+            document.getElementById('name').value = '';
+            document.getElementById('address').value = '';
+            document.getElementById('message').value = '';
+        }
+
+        // Clear entries on page load
+        localStorage.removeItem('entries');
+
+        refreshEntryList();
+    </script>
+</body>
+
+</html>
